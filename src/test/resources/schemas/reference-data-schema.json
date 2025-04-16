@@ -1,0 +1,255 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "ChargerTypes",
+    "ConnectionTypes",
+    "CurrentTypes",
+    "Countries",
+    "DataProviders",
+    "Operators",
+    "StatusTypes",
+    "SubmissionStatusTypes",
+    "UsageTypes",
+    "UserCommentTypes",
+    "CheckinStatusTypes",
+    "DataTypes",
+    "MetadataGroups"
+  ],
+  "properties": {
+    "ChargerTypes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "ID",
+          "Title"
+        ],
+        "properties": {
+          "ID": {
+            "type": "integer"
+          },
+          "Title": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "ConnectionTypes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "ID",
+          "Title"
+        ],
+        "properties": {
+          "ID": {
+            "type": "integer"
+          },
+          "Title": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "CurrentTypes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "ID",
+          "Title"
+        ],
+        "properties": {
+          "ID": {
+            "type": "integer"
+          },
+          "Title": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "Countries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "ID",
+          "Title"
+        ],
+        "properties": {
+          "ID": {
+            "type": "integer"
+          },
+          "Title": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "DataProviders": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "ID",
+          "Title"
+        ],
+        "properties": {
+          "ID": {
+            "type": "integer"
+          },
+          "Title": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "Operators": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "ID",
+          "Title"
+        ],
+        "properties": {
+          "ID": {
+            "type": "integer"
+          },
+          "Title": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "StatusTypes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "ID",
+          "Title"
+        ],
+        "properties": {
+          "ID": {
+            "type": "integer"
+          },
+          "Title": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "SubmissionStatusTypes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "ID",
+          "Title"
+        ],
+        "properties": {
+          "ID": {
+            "type": "integer"
+          },
+          "Title": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "UsageTypes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "ID",
+          "Title"
+        ],
+        "properties": {
+          "ID": {
+            "type": "integer"
+          },
+          "Title": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "UserCommentTypes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "ID",
+          "Title"
+        ],
+        "properties": {
+          "ID": {
+            "type": "integer"
+          },
+          "Title": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "CheckinStatusTypes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "ID",
+          "Title"
+        ],
+        "properties": {
+          "ID": {
+            "type": "integer"
+          },
+          "Title": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "DataTypes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "ID",
+          "Title"
+        ],
+        "properties": {
+          "ID": {
+            "type": "integer"
+          },
+          "Title": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "MetadataGroups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "ID",
+          "Title"
+        ],
+        "properties": {
+          "ID": {
+            "type": "integer"
+          },
+          "Title": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
