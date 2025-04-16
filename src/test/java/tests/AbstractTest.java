@@ -8,9 +8,11 @@ import org.testng.annotations.BeforeMethod;
 
 import java.lang.reflect.Method;
 
+import io.qameta.allure.Epic;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 
+@Epic("Open Charge Map")
 public abstract class AbstractTest {
 
     public Logger log() {

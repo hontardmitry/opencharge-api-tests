@@ -14,8 +14,10 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import io.qameta.allure.Feature;
 import io.restassured.response.Response;
 
+@Feature("Get Reference Data")
 public class GetReferenceDataTests extends AbstractTest {
 
     private static final String FAST_CHARGER_TITLE = "Level 3:  High (Over 40kW)";

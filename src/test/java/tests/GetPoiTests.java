@@ -9,8 +9,10 @@ import static org.hamcrest.Matchers.lessThanOrEqualTo;
 import client.PoiClient;
 import org.testng.annotations.Test;
 
+import io.qameta.allure.Feature;
 import io.restassured.response.Response;
 
+@Feature("Get POI")
 public class GetPoiTests extends AbstractTest {
 
     private final PoiClient client = new PoiClient();
