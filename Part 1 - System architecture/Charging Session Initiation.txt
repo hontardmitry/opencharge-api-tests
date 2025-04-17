@@ -1,0 +1,47 @@
+@startuml
+autonumber
+title Charging Session Initiation
+
+actor Driver
+participant "Mobile App" as App
+participant "Charging Station" as Charger
+box "Charge Management System" #LightBlue
+participant "Charging Management" as CMS
+participant "Authentication Module" as Auth
+participant "Energy Management" as Energy
+database "Charger DB" as DB
+end box
+
+== Vehicle Plug-in ==
+Driver -> Charger: Plug vehicle
+
+== Authentication ==
+Driver -> App: Initiate charging
+App -> CMS: POST Authentication request {userID, chargerID, authToken}
+CMS -> Auth: Verify user credentials
+Auth --> CMS: Auth success
+CMS --> Charger: Charging approved
+
+== Station Communication (OCPP) ==
+Charger -> CMS: OCPP start charging request
+note right of Charger
+Uses OCPP protocol to communicate
+with backend management system
+end note
+
+== Energy Optimization ==
+CMS -> Energy: Evaluate optimal charging rate
+note right of Energy
+Considers grid load, user plan,
+charger type (AC/DC/MCS)
+end note
+Energy --> CMS: Optimal charging rate {rate: 50kW}
+
+== Charging Starts ==
+CMS -> Charger: OCPP start charging configuration {rate: 50kW}
+Charger -> Vehicle: Start charging using configuration {rate: 50kW}
+
+== Status Update ==
+CMS -> App: POST charging session status
+App -> Driver: Charging in progress (50kW)
+@enduml

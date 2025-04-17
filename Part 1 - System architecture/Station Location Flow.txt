@@ -1,0 +1,21 @@
+@startuml
+autonumber
+title Station Location Flow
+
+actor Driver
+participant "Mobile App" as App
+participant "Charging Management System" as CMS
+database "Charger DB" as DB
+
+Driver -> App: Open app and search for stations
+App -> CMS: GET /stations?location={lat,long}
+note right of CMS
+Receives request for nearby stations
+with geolocation parameters
+end note
+
+CMS -> DB: Query available chargers near {lat,long}
+DB --> CMS: Return charger list with status
+CMS --> App: Station list + real-time availability
+App -> Driver: Display nearby stations on map
+@enduml
